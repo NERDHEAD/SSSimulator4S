@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatusSimpleView">
+        <attr name="status_name" format="string" />
+    </declare-styleable>
+    <declare-styleable name="StatusDetailView">
+        <attr name="status_dname" format="string" />
+    </declare-styleable>
+
+</resources>

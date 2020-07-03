@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+
+    tools:context=".StatusActivity"
+    tools:showIn="@layout/activity_status">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/simple_info"/>
+        <com.androidstudy.sssimul4s.customView.StatusDetailView
+            android:id="@+id/statusLVL"
+            app:status_dname="@string/STATUS_LVL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <com.androidstudy.sssimul4s.customView.StatusSimpleView
+            android:id="@+id/statusSTR"
+            app:status_name="@string/STATUS_STR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.androidstudy.sssimul4s.customView.StatusSimpleView
+            android:id="@+id/statusDEX"
+            app:status_name="@string/STATUS_DEX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.androidstudy.sssimul4s.customView.StatusSimpleView
+            android:id="@+id/statusINT"
+            app:status_name="@string/STATUS_INT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.androidstudy.sssimul4s.customView.StatusSimpleView
+            android:id="@+id/statusLCK"
+            app:status_name="@string/STATUS_LCK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 남는 포인트 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="남은 포인트 : "/>
+        <EditText
+            android:id="@+id/edtAbilityPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="0"/>
+
+    </LinearLayout>
+
+
+    <!-- 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/OK"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="초기화"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="right|center_horizontal"
+            android:text="Level Up!!!(테스트용)"/>
+
+        <Button
+            android:id="@+id/btnPlus1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="+1"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/btnPlus2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="+10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

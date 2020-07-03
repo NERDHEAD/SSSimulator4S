@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SSSimul4S</string>
+    <string name="simple_info">기본 정보</string>
+    <string name="STATUS_LVL">LVL</string>
+    <string name="STATUS_STR">STR</string>
+    <string name="STATUS_DEX">DEX</string>
+    <string name="STATUS_INT">INT</string>
+    <string name="STATUS_LCK">LCK</string>
+    <string name="STATUS_AP">AP</string>
+    <string name="Submit">적용</string>
+    <string name="OK">확인</string>
+    <string name="Cancel">취소</string>
+
+
+</resources>
